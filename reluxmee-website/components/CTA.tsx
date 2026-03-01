@@ -6,7 +6,7 @@ const CTA = () => {
     return (
         <section className="py-24 bg-brand-gold text-white text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-black/10"></div>
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-[1280px] mx-auto px-8 relative z-10">
                 <ScrollReveal direction="up">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Ready for Your Stay?</h2>
                     <p className="text-xl mb-10 max-w-2xl mx-auto opacity-90 font-light">

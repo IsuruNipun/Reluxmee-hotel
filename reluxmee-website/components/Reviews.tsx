@@ -2,7 +2,7 @@
 const Reviews = () => {
     return (
         <section className="py-20 bg-white">
-            <div className="container mx-auto px-4 max-w-4xl">
+            <div className="max-w-[1280px] mx-auto px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 mb-2">Guest Experiences</h2>
                     <div className="flex justify-center gap-1 text-amber-500 mb-4">

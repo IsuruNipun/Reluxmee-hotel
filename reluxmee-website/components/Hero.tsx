@@ -16,7 +16,7 @@ const Hero = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
   return (
-    <section ref={ref} className="relative h-screen min-h-[600px] flex items-center justify-center text-white overflow-hidden">
+    <section ref={ref} className="relative h-screen min-h-[600px] flex items-center text-white overflow-hidden">
       {/* Background Image Wrapper for Parallax */}
       <motion.div
         style={{ y, scale }}
@@ -34,57 +34,59 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      <motion.div
-        style={{ opacity }}
-        className="container mx-auto px-4 z-20 text-left relative"
-      >
-        <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="block text-brand-gold font-bold tracking-[0.2em] mb-4 uppercase text-sm md:text-base"
-        >
-          Welcome to Anuradhapura
-        </motion.span>
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight leading-tight"
-        >
-          RELUXMEE <br /> <span className="text-white/90 font-light">HOTEL</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl font-light leading-relaxed"
-        >
-          Modern Comfort in the Heart of the Sacred City
-        </motion.p>
-
+      <div className="max-w-[1280px] mx-auto px-8 z-20 relative w-full">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-start items-start w-full"
+          style={{ opacity }}
+          className="text-left"
         >
-          <a
-            href="https://www.booking.com/Share-DiVxJe"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-brand-gold text-white font-bold rounded-sm hover:bg-yellow-600 transition-all uppercase tracking-widest flex items-center gap-2 group"
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="block text-brand-gold font-bold tracking-[0.2em] mb-4 uppercase text-sm md:text-base"
           >
-            Book Your Stay <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
-            href="#rooms"
-            className="px-8 py-4 border border-white text-white font-bold rounded-sm hover:bg-white hover:text-brand-charcoal transition-all uppercase tracking-widest"
+            Welcome to Anuradhapura
+          </motion.span>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight leading-tight"
           >
-            View Rooms
-          </a>
+            RELUXMEE <br /> <span className="text-white/90 font-light">HOTEL</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl font-light leading-relaxed"
+          >
+            Modern Comfort in the Heart of the Sacred City
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-6 justify-start items-start md:items-center"
+          >
+            <a
+              href="https://www.booking.com/Share-DiVxJe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-5 bg-brand-gold text-white font-bold rounded-sm hover:bg-yellow-600 transition-all uppercase tracking-widest flex items-center gap-3 shadow-2xl group"
+            >
+              Book Your Stay <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="#rooms"
+              className="px-10 py-5 border-2 border-white/80 text-white font-bold rounded-sm hover:bg-white hover:text-brand-charcoal transition-all uppercase tracking-widest bg-black/10 backdrop-blur-sm"
+            >
+              View Rooms
+            </a>
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
 
       {/* Scroll Indicator */}
       <motion.div

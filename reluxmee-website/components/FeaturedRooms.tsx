@@ -153,7 +153,7 @@ const FeaturedRooms = () => {
 
     return (
         <section id="rooms" className="py-24 bg-brand-beige overflow-hidden">
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1280px] mx-auto px-8">
                 <ScrollReveal>
                     <div className="text-center mb-16">
                         <span className="text-brand-gold font-bold uppercase tracking-widest text-sm mb-2 block">Accommodation</span>

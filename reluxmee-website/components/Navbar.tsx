@@ -30,7 +30,7 @@ const Navbar = () => {
         : 'bg-gradient-to-b from-black/50 to-transparent text-white py-5'
         }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="max-w-[1280px] mx-auto px-8 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold tracking-wider uppercase">
           Reluxmee Hotel
         </Link>

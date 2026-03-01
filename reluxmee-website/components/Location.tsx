@@ -6,7 +6,7 @@ import ScrollReveal from './ScrollReveal';
 const Location = () => {
     return (
         <section id="location" className="py-24 bg-gray-50 overflow-hidden">
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1280px] mx-auto px-8">
                 <ScrollReveal>
                     <div className="text-center mb-16">
                         <span className="text-brand-gold font-bold uppercase tracking-widest text-sm mb-2 block">Find Us</span>

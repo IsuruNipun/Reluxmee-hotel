@@ -26,7 +26,7 @@ const Rooftop = () => {
             {/* Background Pattern */}
             <div className="absolute inset-0 z-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-[1280px] mx-auto px-8 relative z-10">
                 <div className="flex flex-col md:flex-row items-center gap-16">
                     <div className="w-full md:w-1/2">
                         <ScrollReveal direction="right">

@@ -14,12 +14,11 @@ const QuickInfo = () => {
 
     return (
         <section className="bg-brand-beige py-12 border-b border-gray-100 overflow-hidden">
-            <div className="container mx-auto px-4 max-w-7xl">
-                <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-y-8 gap-x-2 md:gap-x-0">
+            <div className="max-w-[1280px] mx-auto px-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-start justify-items-start">
                     {features.map((feature, index) => (
-                        <ScrollReveal key={index} delay={index * 0.1} direction="down" className="flex-shrink-0">
-                            <div className={`flex items-center gap-3 px-6 xl:px-10 group cursor-default ${index !== features.length - 1 ? 'md:border-r border-gray-200' : ''
-                                }`}>
+                        <ScrollReveal key={index} delay={index * 0.1} direction="down" className="w-full">
+                            <div className="flex flex-col sm:flex-row items-center justify-start gap-4 group cursor-default">
                                 <motion.span
                                     animate={{ y: [0, -5, 0] }}
                                     transition={{ repeat: Infinity, duration: 3, delay: index * 0.2, ease: "easeInOut" }}
@@ -27,7 +26,7 @@ const QuickInfo = () => {
                                 >
                                     {feature.icon}
                                 </motion.span>
-                                <span className="font-bold text-brand-charcoal text-[11px] sm:text-xs md:text-sm lg:text-[13px] xl:text-base uppercase tracking-widest whitespace-nowrap">
+                                <span className="font-bold text-brand-charcoal text-[10px] sm:text-xs xl:text-sm uppercase tracking-widest whitespace-nowrap text-center sm:text-left">
                                     {feature.text}
                                 </span>
                             </div>

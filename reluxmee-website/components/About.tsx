@@ -8,28 +8,9 @@ import ScrollReveal from './ScrollReveal';
 const About = () => {
     return (
         <section className="py-24 bg-white overflow-hidden">
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1280px] mx-auto px-8">
                 <div className="flex flex-col md:flex-row items-center gap-16 mb-20">
-                    <div className="w-full md:w-1/2">
-                        <ScrollReveal direction="right">
-                            <div className="relative h-[400px] md:h-[550px] group">
-                                <div className="absolute inset-4 border-2 border-brand-gold z-0 translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
-                                <motion.div
-                                    whileHover={{ scale: 0.98, rotateY: 5 }}
-                                    className="relative h-full w-full z-10 bg-gray-200 overflow-hidden shadow-2xl"
-                                >
-                                    <Image
-                                        src="/front_door.jpeg"
-                                        alt="Reluxmee Hotel Entrance"
-                                        fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
-                                    />
-                                </motion.div>
-                            </div>
-                        </ScrollReveal>
-                    </div>
-
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 order-2 md:order-1">
                         <ScrollReveal direction="left">
                             <span className="text-brand-gold font-bold uppercase tracking-widest text-sm mb-2 block">Our Story</span>
                             <h2 className="text-4xl md:text-5xl font-bold text-brand-charcoal mb-8 leading-tight">
@@ -53,6 +34,25 @@ const About = () => {
                                 >
                                     Experience More
                                 </Link>
+                            </div>
+                        </ScrollReveal>
+                    </div>
+
+                    <div className="w-full md:w-1/2 order-1 md:order-2">
+                        <ScrollReveal direction="right">
+                            <div className="relative h-[400px] md:h-[550px] group">
+                                <div className="absolute inset-4 border-2 border-brand-gold z-0 translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2"></div>
+                                <motion.div
+                                    whileHover={{ scale: 0.98, rotateY: 5 }}
+                                    className="relative h-full w-full z-10 bg-gray-200 overflow-hidden shadow-2xl"
+                                >
+                                    <Image
+                                        src="/front_door.jpeg"
+                                        alt="Reluxmee Hotel Entrance"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    />
+                                </motion.div>
                             </div>
                         </ScrollReveal>
                     </div>
