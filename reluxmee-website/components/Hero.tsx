@@ -67,7 +67,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full"
+          className="flex flex-col sm:flex-row gap-4 justify-start items-start w-full"
         >
           <a
             href="https://www.booking.com/Share-DiVxJe"

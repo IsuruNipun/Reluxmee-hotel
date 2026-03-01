@@ -15,10 +15,11 @@ const QuickInfo = () => {
     return (
         <section className="bg-brand-beige py-12 border-b border-gray-100 overflow-hidden">
             <div className="container mx-auto px-4 max-w-7xl">
-                <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-y-6 md:divide-x divide-gray-200">
+                <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-y-8 gap-x-2 md:gap-x-0">
                     {features.map((feature, index) => (
-                        <ScrollReveal key={index} delay={index * 0.1} direction="down">
-                            <div className="flex items-center gap-3 px-4 xl:px-8 group cursor-default">
+                        <ScrollReveal key={index} delay={index * 0.1} direction="down" className="flex-shrink-0">
+                            <div className={`flex items-center gap-3 px-6 xl:px-10 group cursor-default ${index !== features.length - 1 ? 'md:border-r border-gray-200' : ''
+                                }`}>
                                 <motion.span
                                     animate={{ y: [0, -5, 0] }}
                                     transition={{ repeat: Infinity, duration: 3, delay: index * 0.2, ease: "easeInOut" }}
